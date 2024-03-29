@@ -1,0 +1,197 @@
+body{
+  margin: 0px;
+  background-color: hsl(30, 54%, 90%);
+  font-family: 'Young Serif';
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+}
+
+ul, ol{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+p, li{
+  color: hsl(24, 5%, 18%);
+}
+
+main{
+  width: 800px;
+  margin: 100px auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.title{
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.title-p{
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.preparation{
+  margin-top: 30px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.preparation h3{
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation ul{
+  margin-top: 10px;
+  padding-left: 45px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.preparation li{
+  padding: 10px 0px;
+}
+
+.preparation li::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  background-color: hsl(332, 51%, 32%);
+  border-radius: 4px;
+  position: absolute;
+  left: 10px;
+  margin-top: 8px;
+}
+
+span{
+  font-weight: bold;
+}
+
+.ingredients{
+  margin-top: 30px;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list{
+  margin-top: 20px;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.ingredients-list li::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  background-color: hsl(14, 45%, 36%);
+  border-radius: 4px;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+}
+
+.instructions{
+  margin-top: 60px;
+  color: hsl(14, 45%, 36%);
+  position: relative;
+}
+
+.instructions::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color:  grey;
+  position: absolute;
+  bottom: 60px;
+}
+
+.instructions-list{
+  margin-top: 20px;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  list-style: decimal;
+}
+
+.nutrition{
+  margin-top: 60px;
+  color: hsl(14, 45%, 36%);
+  position: relative;
+}
+
+.nutrition::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color:  hsl(24, 5%, 18%);
+  position: absolute;
+  bottom: 60px;
+}
+
+.nutrition-p{
+  margin-top: 20px;
+}
+
+.nutrition-div{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0px;
+  position: relative;
+}
+
+.nutrition-div-list{
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nutrition-div-list2 li{
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-div-list :not(:first-child)::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color:  grey;
+  position: absolute;
+  left: 0px;
+  margin-top: -10px;
+}
